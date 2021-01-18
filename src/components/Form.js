@@ -32,18 +32,21 @@ export default class Form extends Component<{}> {
       justifyContent: 'center',
     }, 
     button: {
-        width: 150, 
-        height: 30,
+        width: 300, 
         backgroundColor: 'rgba(255, 255, 255, 0.3)',
         borderRadius: 25, 
         marginVertical: 10,
-        alignItems: 'center'
+        borderRadius: 25,
+        marginVertical: 10, 
+        paddingVertical: 16,
+        backgroundColor: '#1c313a'
     }, 
     buttonText: {
         fontSize: 16, 
         fontWeight: '500', 
         color: 'white', 
         textAlign: 'center', 
+       
        
     },
     inputBox: {
