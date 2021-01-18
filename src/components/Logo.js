@@ -22,7 +22,7 @@ export default class Logo extends Component<{}> {
       justifyContent: 'center',
     }, 
     logoText: {
-      color: 'black', 
+      color: 'white', 
       fontSize: 15,
       alignItems: 'center'
     }

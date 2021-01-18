@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Text, View , StyleSheet } from 'react-native';
-
+import { Text, View , StyleSheet , TextInput} from 'react-native';
+import Form from '../components/Form';
 import Logo from '../components/Logo';
 
 export default class Login extends Component<{}> {
@@ -8,7 +8,7 @@ export default class Login extends Component<{}> {
     return (
         <View style={styles.container}>
         <Logo/>
-        
+        <Form/>
         </View>
       );
     };
@@ -24,6 +24,10 @@ export default class Login extends Component<{}> {
     text: {
       color: 'black', 
       fontSize: 40
+    },
+    inputBoc: {
+      width: 300,
+
     }
   });
   
