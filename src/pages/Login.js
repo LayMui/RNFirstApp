@@ -6,10 +6,9 @@ import Signup from './Signup';
 export default class Login extends Component<{}> {
   render() {
     return (
-        <View style={styles.container}>
+       <View style={styles.container}>
         <Logo/>
-        <Form/>
-        <Signup/>
+        <Form type="Sign in"/>
         </View>
       );
     };

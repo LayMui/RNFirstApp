@@ -18,7 +18,7 @@ export default class Form extends Component<{}> {
         placeholderTextColor = 'white'
         />
         <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Login</Text>
+            <Text style={styles.buttonText}>{this.props.type}</Text>
         </TouchableOpacity>
        </View>
        
@@ -28,9 +28,8 @@ export default class Form extends Component<{}> {
 
   const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      alignItems: 'center', 
-      justifyContent: 'center',
+      flex: 2,
+      justifyContent: 'flex-start',
     }, 
     button: {
         width: 300, 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Text, View , StyleSheet, StatusBar } from 'react-native';
 
 import Login from './src/pages/Login';
+import Signup from './src/pages/Signup';
 
 export default class App extends Component<{}> {
   render() {
@@ -10,6 +11,7 @@ export default class App extends Component<{}> {
           <StatusBar backgroundColor="blue"
           barStyle="light-content"/>
         <Login/>
+        <Signup/>
         </View>
       );
     };

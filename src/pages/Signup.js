@@ -1,27 +1,28 @@
 import React, { Component } from 'react';
 import { Text, View , StyleSheet , TextInput, TouchableOpacity} from 'react-native';
-import Form from '../components/Form';
-import Logo from '../components/Logo';
+
 
 export default class Signup extends Component<{}> {
   render() {
     return (
-        <View style={styles.container}>
+       <View style={styles.container}>
         <View style={styles.signupTextCont}>
-            <Text style={styles.signupText}>Don't have any account yet?</Text>
+            <Text style={styles.signupText}>Don't have any account yet? </Text>
             <Text style={styles.signupButton}>Signup</Text>
         </View>
         </View>
+        
       );
     };
   }
 
   const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#455a64', 
-        flex: 1,
+       backgroundColor: '#455a64', 
+        flex: 0.1,
         alignItems: 'center', 
         justifyContent: 'center',
+        
       }, 
     signupTextCont: {
       flexGrow: 1,
