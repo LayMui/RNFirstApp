@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import { Text, View , StyleSheet , TextInput, TouchableOpacity} from 'react-native';
 import Form from '../components/Form';
 import Logo from '../components/Logo';
-import Signup from './Signup';
-export default class Login extends Component<{}> {
+
+export default class Signup extends Component<{}> {
   render() {
     return (
         <View style={styles.container}>
-        <Logo/>
-        <Form/>
-        <Signup/>
+        <View style={styles.signupTextCont}>
+            <Text style={styles.signupText}>Don't have any account yet?</Text>
+            <Text style={styles.signupButton}>Signup</Text>
+        </View>
         </View>
       );
     };
@@ -17,11 +18,11 @@ export default class Login extends Component<{}> {
 
   const styles = StyleSheet.create({
     container: {
-      backgroundColor: '#455a64', 
-      flex: 1,
-      alignItems: 'center', 
-      justifyContent: 'center',
-    }, 
+        backgroundColor: '#455a64', 
+        flex: 1,
+        alignItems: 'center', 
+        justifyContent: 'center',
+      }, 
     signupTextCont: {
       flexGrow: 1,
       alignItems: 'center',

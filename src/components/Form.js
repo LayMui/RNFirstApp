@@ -14,6 +14,7 @@ export default class Form extends Component<{}> {
        <TextInput style={styles.inputBox} 
         underlineColorAndroid='rgba(0,0,0,0)'
         placeholder="Password"
+        secureTextEntry={true}
         placeholderTextColor = 'white'
         />
         <TouchableOpacity style={styles.button}>
