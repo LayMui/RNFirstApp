@@ -12,6 +12,7 @@ import Signup from './src/pages/Signup';
 import Home from './src/pages/Home';
 
 export default class App extends Component<{}> {
+ 
   render() {
     return (
       <NavigationContainer>
@@ -20,14 +21,17 @@ export default class App extends Component<{}> {
         <Stack.Screen
           name="Login"
           component={Login}
+          options={{headerShown:false}}
         />
          <Stack.Screen
           name="Signup"
           component={Signup}
+        
         />
          <Stack.Screen
           name="Home"
           component={Home}
+        
         />
       </Stack.Navigator>
 

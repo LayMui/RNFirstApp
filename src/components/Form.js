@@ -5,7 +5,6 @@ import Home from '../pages/Home';
 
 
 export default class Form extends Component<{}> {
-   
   render() {
     const { navigate } = this.props.navigation;
     return (
