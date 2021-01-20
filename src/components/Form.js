@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import { Text, View , StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import Home from '../pages/Home';
+
 
 
 export default class Form extends Component<{}> {
+   
   render() {
+    const { navigate } = this.props.navigation;
     return (
          <View style={styles.container}>
         <TextInput style={styles.inputBox} 
@@ -17,7 +21,10 @@ export default class Form extends Component<{}> {
         secureTextEntry={true}
         placeholderTextColor = 'white'
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity  
+        onPress={() => navigate('Home')}
+     
+         style={styles.button}>
             <Text style={styles.buttonText}>{this.props.type}</Text>
         </TouchableOpacity>
        </View>

@@ -3,12 +3,15 @@ import { Text, View , StyleSheet , TextInput, TouchableOpacity} from 'react-nati
 import Form from '../components/Form';
 import Logo from '../components/Logo';
 import Signup from './Signup';
+
+import AsyncStorage from '@react-native-community/async-storage';
+
 export default class Login extends Component<{}> {
   render() {
     return (
        <View style={styles.container}>
         <Logo/>
-        <Form type="Sign in"/>
+        <Form type="Sign in" navigation={this.props.navigation}/>
         </View>
       );
     };
