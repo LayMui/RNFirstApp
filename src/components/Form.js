@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, View , StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import Home from '../pages/Home';
 
-
+import { testProperties } from '../utility/helper';
 
 export default class Form extends Component<{}> {
   render() {
@@ -10,11 +10,14 @@ export default class Form extends Component<{}> {
     return (
          <View style={styles.container}>
         <TextInput style={styles.inputBox} 
+        {...testProperties('email')}
         underlineColorAndroid='rgba(0,0,0,0)'
         placeholder="Email"
         placeholderTextColor = 'white'
        />
-       <TextInput style={styles.inputBox} 
+       <TextInput 
+        {...testProperties('password')}
+        style={styles.inputBox} 
         underlineColorAndroid='rgba(0,0,0,0)'
         placeholder="Password"
         secureTextEntry={true}
@@ -22,7 +25,7 @@ export default class Form extends Component<{}> {
         />
         <TouchableOpacity  
         onPress={() => navigate('Home')}
-     
+        {...testProperties('login')}
          style={styles.button}>
             <Text style={styles.buttonText}>{this.props.type}</Text>
         </TouchableOpacity>
