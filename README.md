@@ -40,3 +40,11 @@ Go to the folder of rnfirstapp-for-training/Apps/rn-first-app.ipa
 
 ## How to build apk
 https://www.instamobile.io/android-development/generate-react-native-release-build-android/
+
+
+1. Go to ./android/app/build/outputs/apk/debug/app-debug.apk
+
+or 
+1. cd android
+./gradlew assembleRelease
+the APK creation process is done. You can find the generated APK at android/app/build/outputs/apk/app-release.apk. This is the actual app, 
