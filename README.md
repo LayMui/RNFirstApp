@@ -20,7 +20,9 @@ https://codecept.io/mobile-react-native-locators.html https://reactnative.dev/do
 https://discuss.appium.io/t/how-to-accept-allow-app-to-access-location-on-android/19568
 https://devqa.io/git-cheat-sheet-for-testers/
 
-# How to build ipa
+
+## How to build ipa
+```
 1 Go to Xcode, hook up to target phone
 2. Go to Target, select Signing and Capabilities, Choose team
 3. Build, this will generate the app which run on iOS Simulator
@@ -34,4 +36,7 @@ Automatically manage signing
 Click on Export
 Export As rnfirstapp-for-training
 Go to the folder of rnfirstapp-for-training/Apps/rn-first-app.ipa
+``
 
+## How to build apk
+https://www.instamobile.io/android-development/generate-react-native-release-build-android/
