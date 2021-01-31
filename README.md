@@ -30,7 +30,8 @@ https://devqa.io/git-cheat-sheet-for-testers/
 4. To generate the ipa (to run on real device)
 ```
 Preparing archive for distribution....
-Go to Xcode, Window -> Organizer
+Go to Xcode, Product -> Archive
+At Organizer
 Click on Distribute App -> Development (Distribute to member of your team)
 App thinning: All compatible device variants
 Automatically manage signing
