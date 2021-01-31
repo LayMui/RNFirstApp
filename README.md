@@ -28,7 +28,8 @@ https://devqa.io/git-cheat-sheet-for-testers/
 3. Build, this will generate the app which run on iOS Simulator
 /Users/laymui/Library/Developer/Xcode/DerivedData/RNFirstApp-gzqrhebpxlbeotgeweoxnafhkkqp/Build/Products/Debug-iphoneos
 4. To generate the ipa (to run on real device)
-Prearing archive for distribution....
+```
+Preparing archive for distribution....
 Go to Xcode, Window -> Organizer
 Click on Distribute App -> Development (Distribute to member of your team)
 App thinning: All compatible device variants
@@ -36,7 +37,10 @@ Automatically manage signing
 Click on Export
 Export As rnfirstapp-for-training
 Go to the folder of rnfirstapp-for-training/Apps/rn-first-app.ipa
-``
+
+cd ios
+xcodebuild clean archive -workspace RNFirstApp.xcworkspace -scheme "RNFirstApp" -archivePath RNFirstApp.xcarchive
+```
 
 ## How to build apk
 https://www.instamobile.io/android-development/generate-react-native-release-build-android/
