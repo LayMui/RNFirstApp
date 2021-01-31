@@ -36,8 +36,8 @@ Click on Distribute App -> Development (Distribute to member of your team)
 App thinning: All compatible device variants
 Automatically manage signing
 Click on Export
-Export As rnfirstapp-for-training
-Go to the folder of rnfirstapp-for-training/Apps/rn-first-app.ipa
+Export As RNFirstApp
+Go to the folder of RNFirstApp/Apps/RNFirstApp.ipa
 
 cd ios
 xcodebuild clean archive -workspace RNFirstApp.xcworkspace -scheme "RNFirstApp" -archivePath RNFirstApp.xcarchive
