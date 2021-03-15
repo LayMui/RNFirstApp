@@ -1,4 +1,4 @@
-**
+/**
  * Add a unique test id for iOS and Android
  *
  * @param {string} id
