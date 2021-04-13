@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View , StyleSheet, StatusBar } from 'react-native';
 
+import Reactotron from "reactotron-react-native"
 import 'react-native-gesture-handler';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -10,6 +11,17 @@ const Stack = createStackNavigator();
 import Login from './src/pages/Login';
 import Signup from './src/pages/Signup';
 import Home from './src/pages/Home';
+
+if(__DEV__) {
+  import("./ReactotronConfig")
+}
+
+Reactotron.log("HELLO WORLD")
+Reactotron.display({
+  name: "KNOCK KNOCK",
+  preview: "Who's there?",
+  value: "Orange."
+})
 
 export default class App extends Component<{}> {
  

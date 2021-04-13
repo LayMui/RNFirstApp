@@ -53,3 +53,6 @@ or
 1. cd android
 ./gradlew assembleRelease
 the APK creation process is done. You can find the generated APK at android/app/build/outputs/apk/app-release.apk. This is the actual app, 
+
+## Add reactotron
+https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md
