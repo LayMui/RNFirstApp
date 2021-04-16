@@ -56,3 +56,8 @@ the APK creation process is done. You can find the generated APK at android/app/
 
 ## Add reactotron
 https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md
+
+# Use Reactotron
+1. Start Reactotron separately
+2. Run npm run ios
+3. Wait for the connection
